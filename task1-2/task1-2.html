@@ -2,21 +2,22 @@
 <html>
     <head>
         <meta charset = "utf-8">
-        <title>ife task 1</title>
+        <title>ife task 2</title>
         <link type = "text/css" rel = "stylesheet" href = "task1-2.css">
     </head>
     <body>
         <header id = "top">
             <img id = "logo" src = "image/logo.png" alt = "百度logo">
+            <nav>
+                <ul>
+                    <li><a href = "http://ife.baidu.com/task/all" title = "全部任务">导航链接一</a></li>
+                    <li><a href = "http://ife.baidu.com/task/detail?taskId=1" title = "任务一">导航链接二</a></li>
+                    <li><a href = "http://ife.baidu.com/note/all" title = "学习笔记">导航链接三</a></li>
+                    <li><a href = "http://ife.baidu.com/" title = "ife首页" class = "selected">导航链接四</a></li>
+                </ul>
+            </nav>
+            <div style = "clear: both">
         </header>
-        <nav>
-            <ul>
-                <li><a href = "http://ife.baidu.com/task/all" title = "全部任务">导航链接一</a></li>
-                <li><a href = "http://ife.baidu.com/task/detail?taskId=1" title = "任务一">导航链接二</a></li>
-                <li><a href = "http://ife.baidu.com/note/all" title = "学习笔记">导航链接三</a></li>
-                <li><a href = "http://ife.baidu.com/" title = "ife首页" class = "selected">导航链接四</a></li>
-            </ul>
-        </nav>
         <section id = "blog">
             <article id = "blog1">
                 <header>
@@ -180,8 +181,8 @@
                         </tr>
                         <tr>
                             <th>性别</th>
-                            <td class = "labelcolor"><input type = "radio" name = "sex" value = "male" checked>男
-                            <input type = "radio" name = "sex" value = "female">女</td>
+                            <td><input class = "labelcirle" type = "radio" name = "sex" value = "male" checked>男
+                            <input class = "labelcirle" type = "radio" name = "sex" value = "female">女</td>
                         </tr>
                         <tr>
                             <th>城市</th>
