@@ -12,21 +12,26 @@
     <body>
         <header id = "top">
             <h1>网站一级标题</h1>
+            <nav>
+                <ul>
+                    <li><a href = "http://ife.baidu.com/task/all" title = "全部任务">导航链接一</a></li>
+                    <li><a href = "http://ife.baidu.com/task/detail?taskId=1" title = "任务一">导航链接二</a></li>
+                    <li><a href = "http://ife.baidu.com/note/all" title = "学习笔记">导航链接三</a></li>
+                    <li><a href = "http://ife.baidu.com/" title = "ife首页">导航链接四</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href = "http://ife.baidu.com/task/all" title = "全部任务">导航链接一</a></li>
-                <li><a href = "http://ife.baidu.com/task/detail?taskId=1" title = "任务一">导航链接二</a></li>
-                <li><a href = "http://ife.baidu.com/note/all" title = "学习笔记">导航链接三</a></li>
-                <li><a href = "http://ife.baidu.com/" title = "ife首页">导航链接四</a></li>
-            </ul>
-        </nav>
         <section id = "blog">
             <article id = "blog1">
                 <header>
-                    <h2>文章一级标题</h2>
-                    <h3>文章二级标题</h3>
-                    <span class = "author">文章作者&nbsp;</span><time datetime = "2016-3-17">文章发表时间</time>
+                    <hgroup>
+                        <h2>文章一级标题</h2>
+                        <h3>文章二级标题</h3>
+                    </hgroup>
+                    <div class = "meta">
+                        <span class = "author">文章作者&nbsp;</span>
+                        <time datetime = "2016-3-17">文章发表时间</time>
+                    </div>
                 </header>
                 <p>
                     这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
@@ -51,9 +56,14 @@
             </article>
             <article id = "blog2">
                 <header>
-                    <h2>另一篇文章一级标题</h2>
-                    <h3>文章二级标题</h3>
-                    <span class = "author">文章作者&nbsp;</span><time datetime = "2016-3-17">文章发表时间</time>
+                    <hgroup>
+                        <h2>另一篇文章一级标题</h2>
+                        <h3>文章二级标题</h3>
+                    </hgroup>
+                    <div class = "meta">
+                        <span class = "author">文章作者&nbsp;</span>
+                        <time datetime = "2016-3-17">文章发表时间</time>
+                    </div>
                 </header>
                 <p>
                     这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
@@ -117,9 +127,14 @@
             </section>
             <article id = "blog3">
                 <header>
-                    <h2>最后一篇文章一级标题</h2>
-                    <h3>文章二级标题</h3>
-                <span class = "author">文章作者&nbsp;</span><time datetime = "2016-3-17">文章发表时间</time>
+                    <hgroup>
+                        <h2>最后一篇文章一级标题</h2>
+                        <h3>文章二级标题</h3>
+                    </hgroup>
+                    <div class = "meta">
+                        <span class = "author">文章作者&nbsp;</span>
+                        <time datetime = "2016-3-17">文章发表时间</time>
+                    </div>
                 </header>
                 <ol>
                     <li>排名1</li>
@@ -127,70 +142,77 @@
                     <li>排名3</li>
                 </ol>
                 <span id = "tablediscription">
-                    下面是一个表格，给表格加了一个border="1"好让你看出是一个表格
+                    下面是一个表格，给表格加了一个<code>border="1"</code>好让你看出是一个表格
                 </span>
                 <table border = "1">
-                    <tr>
-                        <th>表头</th>
-                        <th>表头</th>
-                        <th>表头</th>
-                    </tr>
-                    <tr>
-                        <td>表内容单元格</td>
-                        <td>表内容单元格</td>
-                        <td><a href = "#">操作</a></td>
-                    </tr>
-                    <tr>
-                        <td>表内容单元格</td>
-                        <td>表内容单元格</td>
-                        <td><a href = "#">操作</a></td>
-                    </tr>
-                    <tr>
-                        <td>表内容单元格</td>
-                        <td>表内容单元格</td>
-                        <td><a href = "#">操作</a></td>
-                    </tr>
-                    <tr>
-                        <td>表内容单元格</td>
-                        <td>表内容单元格</td>
-                        <td><a href = "#">操作</a></td>
-                    </tr>
-                    <tr>
-                        <td>总计</td>
-                        <td colspan = "2">1000</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <td>表头</td>
+                            <td>表头</td>
+                            <td>表头</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>表内容单元格</td>
+                            <td>表内容单元格</td>
+                            <td><a href = "#">操作</a></td>
+                        </tr>
+                        <tr>
+                            <td>表内容单元格</td>
+                            <td>表内容单元格</td>
+                            <td><a href = "#">操作</a></td>
+                        </tr>
+                        <tr>
+                            <td>表内容单元格</td>
+                            <td>表内容单元格</td>
+                            <td><a href = "#">操作</a></td>
+                        </tr>
+                        <tr>
+                            <td>表内容单元格</td>
+                            <td>表内容单元格</td>
+                            <td><a href = "#">操作</a></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>总计</td>
+                            <td colspan = "2">1000</td>
+                        </tr>
+                    </tfoot>
                 </table>
             </article>
             <aside>
-                <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+                <header>
+                    <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+                </header>
                 <form action = "#" method = "POST">
                     <h2>侧栏注册窗口标题</h2>
-                    <p>请输入邮箱地址：<input type = "text" name = "email" placeholder="这是一个文本输入框" required="required"></p>
-                    <p>邮箱地址请按要求格式输入</p>
-                    <p>
-                        请输入密码：<input type = "text" name = "password" placeholder = "这是一个文本输入框" pattern = "[A-z,0-9]{6,16}" required="required">
-                        请重复输入密码：<input type = "text" name = "samepassword" placeholder = "这是一个文本输入框" pattern = "[A-z,0-9]{6,16}" required="required">
-                    </p>
-                    <p>密码请为6-16位英文数字</p>
-                    <p>
-                        性别：
-                        <input type = "radio" name = "sex" value = "male" checked>男
-                        <input type = "radio" name = "sex" value = "female">女
-                        城市：
-                        <select name = "city">
-                            <option value = "Beijing" checked>北京</option>
-                            <option value = "Shanghai">上海</option>
-                            <option value = "Guangzhou">广州</option>
-                            <option value = "Shenzhen">深圳</option>
-                        </select>
-                        爱好：
-                        <input type = "checkbox" name = "hobby[]" value = "sports">运动
-                        <input type = "checkbox" name = "hobby[]" value = "art">艺术
-                        <input type = "checkbox" name = "hobby[]" value = "science">科学
-                        个人描述：
-                        <textarea name = "description" rows = "2" column = "10">这是一个多行输入框，输入你的个人描述</textarea>
-                        <input type = "submit" value = "确认提交">
-                    </p>
+                    <label for = "email">请输入邮箱地址：</label>
+                    <input type = "text" name = "email" placeholder="这是一个文本输入框" required="required">
+                    <p class = "hint">邮箱地址请按要求格式输入</p>
+                    <label for = "password">请输入密码：</label>
+                    <input type = "text" name = "password" placeholder = "这是一个文本输入框" pattern = "[A-z,0-9]{6,16}" required="required">
+                    <label for = "password">请重复输入密码：</label>
+                    <input type = "text" name = "samepassword" placeholder = "这是一个文本输入框" pattern = "[A-z,0-9]{6,16}" required="required">
+                    <p class = "hint">密码请为6-16位英文数字</p>
+                    <label for = "sex">性别：</label>
+                    <input type = "radio" name = "sex" value = "male" checked>男
+                    <input type = "radio" name = "sex" value = "female">女
+                    <label for = "city">城市：</label>
+                    <select name = "city">
+                        <option value = "Beijing" checked>北京</option>
+                        <option value = "Shanghai">上海</option>
+                        <option value = "Guangzhou">广州</option>
+                        <option value = "Shenzhen">深圳</option>
+                    </select>
+                    <label for = "hobbies">爱好：</label>
+                    <input type = "checkbox" name = "hobby[]" value = "sports">运动
+                    <input type = "checkbox" name = "hobby[]" value = "art">艺术
+                    <input type = "checkbox" name = "hobby[]" value = "science">科学
+                    <label for = "description">个人描述：</label>
+                    <textarea name = "description" rows = "2" column = "10">这是一个多行输入框，输入你的个人描述</textarea>
+                    <input type = "submit" value = "确认提交">
                 </form>
             </aside>
             <footer>
