@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>ife task 3</title>
+        <style type = "text/css">
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body {
+                font: medium/1.7em "微软雅黑", sans-serif;
+                background: #fff;
+                min-width: 800px;
+            }
+            
+            #nav ul li {
+                list-style: none;
+                display: inline;
+                margin: 20px;
+            }
+            
+            #page {
+                background-color: #eee;
+                margin: 20px;
+                border: 1px solid #999;
+                padding: 20px 204px 20px 242px;
+                overflow: hidden;
+            }
+            
+            #teamname, #teammates, #main {
+                background-color: #fff;
+                border: 1px solid #999;
+                position: relative;
+            }
+
+            #main {
+                padding: 20px;
+                float: left;
+                width: 100%;
+            }
+            
+            #teamname img {
+                float: left;
+                border: 1px solid #333;
+                margin-right: 20px;
+            }
+            
+            #teamname {
+                width: 160px;
+                padding: 20px;
+                float: left;
+                margin-left: -100%;
+                right: 264px;
+            }
+            
+            #teammates img {
+                float: left;
+                margin: 10px 0px;
+                width: 80px;
+                height: 80px;
+            }
+            
+            #teammates {
+                width: 80px;
+                padding: 10px 20px;
+                float: left;
+                margin-left: -165px;
+                left: 185px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "nav">
+            <ul>
+                <li><a href = "task1-3_float.html">Float</a></li>
+                <li><a href = "#">负边距</a></li>    
+                <li><a href = "task1-3_flex.html">Flex</a></li>
+            </ul>
+        </div>
+        <div id = "page">
+            <div id = "main">
+                <div class = "article">
+                    <h3>关于团队</h3>
+                    <p>
+                        团队的名字是队长起的，据说他们有一个团队叫方程式，然后就用到了这里。团队一共有四个人，分别来自位于同一个城市的两所学校的四个专业。
+                    </p>
+                    <h3>关于团队成员</h3>
+                    <p>一个大神 + 三个菜鸟（更多信息有空再更）</p>
+                    <p>（以下是凑字数的，为了能在缩小窗口的时候顺便检测一下显示是否正常）</p>
+                    <p>
+                        百度前端技术学院的课程任务是由百度前端工程师专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量以及学习难度的合理性，
+                        但即使如此，真正决定课程效果的，还是你的每一次思考和实践.课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。
+                        因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。
+                        那些最终没有被我们采纳的方案，同样也可以帮助我们学到很多知识。所以，我们列出的参考资料未必是实现需求所必须的。有的时候，实现题目的
+                        要求很简单，甚至参考资料里就有，但是背后的思考和亲手去实践却是任务最关键的一部分。在学习这些资料时，要多思考，多提问，多质疑。相信
+                        通过和小伙伴们的交流，能让你的学习事半功倍。
+                    </p>
+                </div>
+            </div>
+            <div id = "teamname">
+                <img src = "image/panda.png" alt = "团队Logo">
+                <p>团队名字</p>
+            </div>
+            <div id = "teammates">
+                <div class = "pictures">
+                    <img src = "image/panda1.png" alt = "熊猫1">
+                    <img src = "image/panda2.png" alt = "熊猫2">
+                    <img src = "image/panda3.png" alt = "熊猫3">
+                    <img src = "image/panda4.png" alt = "熊猫4">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
