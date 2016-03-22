@@ -87,6 +87,10 @@ article p {
     text-indent: 32px;
 }
 
+article > img {
+    width: 50%;
+}
+
 article#blog2 ul {
     list-style: none;
     padding: 0px 20px;
