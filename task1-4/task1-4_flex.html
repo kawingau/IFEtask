@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>ife task 4</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            html, body{
+                width: 100%;
+                height: 100%;
+            } /*important*/
+            
+            .box {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .background {
+                background: #ccc;
+                height: 200px;
+                width: 400px;
+                position: relative;
+            }
+            
+            .element {
+                background: #fc0;
+                height: 50px;
+                width: 50px;
+                position: absolute;
+            }
+            
+            #quaduart1 {
+                border-radius: 0 0 50px 0;
+                left: 0px;
+                top: 0px;
+            }
+            
+            #quaduart2 {
+                border-radius: 50px 0 0 0;
+                right: 0px;
+                bottom: 0px;
+            }
+        </style>
+    </head>
+    <body>
+            <div class = "box">
+                <div class = "background"> 
+                    <div class = "element" id = "quaduart1"></div>                         
+                    <div class = "element" id = "quaduart2"></div>            
+                </div>
+            </div>
+    </body>
+</html>
