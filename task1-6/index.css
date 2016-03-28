@@ -14,6 +14,7 @@ body {
 
 .allcontent {
     width: 892px;
+    height: 1386px;
     padding: 0px 44px;
     background-color: #fff;
 }
@@ -22,7 +23,6 @@ header#toph {
     height: 60px;
     border-bottom: 2px solid #938e8c;
     font-family: "黑体", sans-serif;
-    overflow: hidden;
     position: relative;
 }
 
@@ -36,12 +36,12 @@ header#toph p {
     position: absolute;
     top: 44px;
     left: 5px;
-    color: #fff;    
+    color: #fff;
 }
 
 header#toph time {
     float: right;
-    margin-top: 44px;
+    margin-top: -15px;
     color: #d45d5c;
 }
 
@@ -76,6 +76,7 @@ section#tops aside span:first-child {
     color: #75b86b;
     font-style: italic;
     font-weight: 600;
+    margin-left: -25px;
 }
 
 section#tops aside span:nth-child(2) {
@@ -177,7 +178,7 @@ section#bottom {
     clear: both;
     float: left;
     width: 415px;
-    margin: 50px 0px 20px 0px;
+    margin: 50px 0px 30px 0px;
 }
 
 section#bottom hgroup {
@@ -221,6 +222,7 @@ section#bottom span.firstchar {
     font-size: 70px;
     font-family: "微软雅黑", sans-serif;
     margin-right: 10px;
+    margin-top: -15px;
 }
 
 section#bottom img {
@@ -231,7 +233,7 @@ section#bottom img {
 section#contents {
     width: 459px;
     float: right;
-    margin-top: 55px;
+    margin: 55px 0px 30px 0px;
 }
 
 section#contents figure.picture {
