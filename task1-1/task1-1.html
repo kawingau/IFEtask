@@ -24,13 +24,11 @@
         <section id = "blog">
             <article id = "blog1">
                 <header>
-                    <hgroup>
-                        <h2>文章一级标题</h2>
-                        <h3>文章二级标题</h3>
-                    </hgroup>
+                    <h2>文章一级标题</h2>
+                    <h3>文章二级标题</h3>
                     <div class = "meta">
                         <span class = "author">文章作者&nbsp;</span>
-                        <time datetime = "2016-3-17">文章发表时间</time>
+                        <time datetime = "2016-03-17">文章发表时间</time>
                     </div>
                 </header>
                 <p>
@@ -56,13 +54,11 @@
             </article>
             <article id = "blog2">
                 <header>
-                    <hgroup>
-                        <h2>另一篇文章一级标题</h2>
-                        <h3>文章二级标题</h3>
-                    </hgroup>
+                    <h2>另一篇文章一级标题</h2>
+                    <h3>文章二级标题</h3>
                     <div class = "meta">
                         <span class = "author">文章作者&nbsp;</span>
-                        <time datetime = "2016-3-17">文章发表时间</time>
+                        <time datetime = "2016-03-17">文章发表时间</time>
                     </div>
                 </header>
                 <p>
@@ -127,13 +123,11 @@
             </section>
             <article id = "blog3">
                 <header>
-                    <hgroup>
-                        <h2>最后一篇文章一级标题</h2>
-                        <h3>文章二级标题</h3>
-                    </hgroup>
+                    <h2>最后一篇文章一级标题</h2>
+                    <h3>文章二级标题</h3>
                     <div class = "meta">
                         <span class = "author">文章作者&nbsp;</span>
-                        <time datetime = "2016-3-17">文章发表时间</time>
+                        <time datetime = "2016-03-17">文章发表时间</time>
                     </div>
                 </header>
                 <ol>
@@ -144,7 +138,7 @@
                 <span id = "tablediscription">
                     下面是一个表格，给表格加了一个<code>border="1"</code>好让你看出是一个表格
                 </span>
-                <table border = "1">
+                <table>
                     <thead>
                         <tr>
                             <td>表头</td>
@@ -189,29 +183,29 @@
                 <form action = "#" method = "POST">
                     <h2>侧栏注册窗口标题</h2>
                     <label for = "email">请输入邮箱地址：</label>
-                    <input type = "text" name = "email" placeholder="这是一个文本输入框" required="required">
+                    <input type = "text" name = "email" id = "email" placeholder="这是一个文本输入框" required="required">
                     <p class = "hint">邮箱地址请按要求格式输入</p>
                     <label for = "password">请输入密码：</label>
-                    <input type = "text" name = "password" placeholder = "这是一个文本输入框" pattern = "[A-z,0-9]{6,16}" required="required">
-                    <label for = "password">请重复输入密码：</label>
-                    <input type = "text" name = "samepassword" placeholder = "这是一个文本输入框" pattern = "[A-z,0-9]{6,16}" required="required">
+                    <input type = "text" name = "password" id = "password" placeholder = "这是一个文本输入框" pattern = "[A-z,0-9]{6,16}" required="required">
+                    <label for = "password2">请重复输入密码：</label>
+                    <input type = "text" name = "samepassword" id = "password2" placeholder = "这是一个文本输入框" pattern = "[A-z,0-9]{6,16}" required="required">
                     <p class = "hint">密码请为6-16位英文数字</p>
-                    <label for = "sex">性别：</label>
-                    <input type = "radio" name = "sex" value = "male" checked>男
-                    <input type = "radio" name = "sex" value = "female">女
-                    <label for = "city">城市：</label>
+                    性别：
+                    <input type = "radio" name = "sex" value = "male" id = "male" checked><label for = "male">男</label>
+                    <input type = "radio" name = "sex" value = "female" id = "female"><label for = "female">女</label>
+                    城市：
                     <select name = "city">
-                        <option value = "Beijing" checked>北京</option>
+                        <option value = "Beijing">北京</option>
                         <option value = "Shanghai">上海</option>
                         <option value = "Guangzhou">广州</option>
                         <option value = "Shenzhen">深圳</option>
                     </select>
-                    <label for = "hobbies">爱好：</label>
+                    爱好：
                     <input type = "checkbox" name = "hobby[]" value = "sports">运动
                     <input type = "checkbox" name = "hobby[]" value = "art">艺术
                     <input type = "checkbox" name = "hobby[]" value = "science">科学
                     <label for = "description">个人描述：</label>
-                    <textarea name = "description" rows = "2" column = "10">这是一个多行输入框，输入你的个人描述</textarea>
+                    <textarea name = "description" rows = "2" cols = "10" id = "description">这是一个多行输入框，输入你的个人描述</textarea>
                     <input type = "submit" value = "确认提交">
                 </form>
             </aside>
