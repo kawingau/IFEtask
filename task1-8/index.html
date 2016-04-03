@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>ife task 8</title>
+        <style>
+            .allcontent { 
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            .allcontent * {
+                height: 50px;
+                background-color: #eee;
+                outline: 1px solid #999;
+                margin: 10px;
+                float: left;
+            }
+            
+            @media screen and (min-width: 768px) {           
+                .col-md-6 {
+                    width: calc(50% - 20px);
+                }
+            
+                .col-md-4 {
+                    width: calc(100% / 3 - 20px);
+                }
+            
+                .col-md-3 {
+                    width: calc(100% / 4 - 20px);
+                }
+            
+                .col-md-2 {
+                    width: calc(100% / 6 - 20px);
+                }
+            
+                .col-md-1 {
+                    width: calc(100% / 12 - 20px);
+                }
+            }
+            
+            @media screen and (max-width: 767px) {
+                .col-sm-12 {
+                    width: calc(100% - 20px);
+                }
+            
+                .col-sm-8 {
+                    width: calc(100% / 12 * 8 - 20px);
+                }
+            
+                .col-sm-6 {
+                    width: calc(100% / 2 - 20px);
+                }
+            
+                .col-sm-3 {
+                    width: calc(100% / 4 - 20px);
+                }
+            
+                .col-sm-2 {
+                    width: calc(100% / 6 - 20px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "allcontent">
+            <div class = "col-md-4 col-sm-6"></div>
+            <div class = "col-md-4 col-sm-6"></div>
+            <div class = "col-md-4 col-sm-12"></div>
+            <div class = "col-md-3 col-sm-3"></div>
+            <div class = "col-md-6 col-sm-6"></div>
+            <div class = "col-md-3 col-sm-3"></div>
+            <div class = "col-md-1 col-sm-2"></div>
+            <div class = "col-md-1 col-sm-2"></div>
+            <div class = "col-md-2 col-sm-8"></div>
+            <div class = "col-md-2 col-sm-3"></div>
+            <div class = "col-md-6 col-sm-3"></div>
+        </div>
+    </body>
+</html>
